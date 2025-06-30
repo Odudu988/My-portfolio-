@@ -1,0 +1,178 @@
+ :root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --primary-color: #0077ff;
+  --secondary-color: rgb(68, 68, 68);
+ }
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+ }
+
+ h2 {
+  text-align: center;
+ }
+
+  header {
+    background:var(--secondary-color);
+    color: var(--bg-color);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+   nav a {
+    color: var(--bg-color);
+    text-decoration: none;
+    margin-left: 15px;
+   }
+
+    section {
+        padding: 1em;
+    }
+
+    #card {
+        border: 1px solid lightslategrey;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 8px;
+        background: #1e1e1e;
+        box-shadow: 0 0 10px lightblue;
+        color: #f0f0f0;
+    }
+
+    #card:hover {
+      transform: scale(1.05);
+    }
+
+    #theme {
+      background: transparent;
+      border: none;
+      color: var(--bg-color);
+      text-align: center;
+      padding: 1em;
+    }
+
+    #top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px;
+      font-size: 15px;
+      background: var(--secondary-color);
+      color: var(--bg-color);
+      border: none;
+      border-radius: 17px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      #card {
+        font-size: 14px;
+      }
+    }
+     footer {
+        text-align: center;
+        padding: 1em;
+        background: var(--secondary-color);
+     }
+
+     #skills {
+      padding: 1em;
+      background-color: var(--bg-color);
+      color: var(--secondary-color);
+     }
+
+     #skills h2 {
+      text-align: center;
+      margin-bottom: 1em;
+     }
+
+     .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1em;
+      padding: 1em;
+      max-width: 800px;
+      margin: auto;
+     }
+
+     .skill-card {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      text-align: center;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px var(--text-color);
+      font-weight: bold;
+      transition: transform 0.3s ease;
+     }
+
+     .skill-card :hover {
+      transform: scale(1.05);
+     }
+     
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label {
+      font-weight: bold;
+    }
+
+    form input,textarea,button {
+      padding: 0.5em;
+      border: 2px solid #ccc;
+    }
+
+    form button {
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button :hover {
+      background-color: #005ecb;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5em;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1em;
+    }
+
+    .projects-card {
+      background-color: var(--secondary-color);
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 2px 6px 12px;
+      transition: transform 0.3s ease;
+      margin-bottom: 1em;
+    }
